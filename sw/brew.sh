@@ -9,7 +9,7 @@ successfully() {
 ################################################################[ BREW ]########
 brew_path=`which brew`
 if [[ ! -f $brew_path ]]
-then 
+then
   echo "Installing Homebrew, a good OS X package manager..."
     successfully ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
 fi
@@ -18,7 +18,7 @@ echo "Putting Homebrew location earlier in PATH ..." # similar to https://github
   successfully echo "export PATH='/usr/local/bin:\$PATH'" >> ~/.zshrc
   export PATH=/usr/local/bin:$PATH #temporary on bash
 
-echo "Upda-grading Homebrew..."
+echo "Upgrading Homebrew..."
   successfully brew update
   successfully brew upgrade
 
@@ -43,15 +43,28 @@ echo "Updating some tools, adding some others..."
 echo "Installing essential software..."
   #export HOMEBREW_CASK_OPTS="--appdir=/Applications"
   brew cask install dropbox
-  brew cask install the-unarchiver
+  brew cask install google-drive
   brew cask install google-chrome
-  brew cask install vlc
   brew cask install spotify
-  brew cask install open-office
   brew cask install skype
-  brew cask install cyberduck
   brew cask install bartender
-  brew cask install bettertouchtool
   brew cask install coconutbattery
-  brew cask install daisydisk
-
+  brew cask install 1password
+  brew cask install atom
+  brew cask install cleanmymac
+  brew cask install cocktail
+  brew cask install firefox
+  brew cask install kaleidoscope
+  brew cask install kid3
+  brew cask install lingon-x
+  brew cask install macaw
+  brew cask install mpeg-streamclip
+  brew cask install nicecast
+  brew cask install omnigraffle
+  brew cask install path-finder
+  brew cask install slack
+  brew cask install textexpander
+  brew cask install tower
+  brew cask install transmit
+  brew cask install transmission
+  brew cask install virtualhostx
